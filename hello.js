@@ -4,7 +4,5 @@ function hello() {
 };
 
 function changeStyle() {
-    document.getElementById('myButton').setAttribute("class", "buttonStyle");
-    console.log('"HERE!!!!!!');
-    
+    document.getElementById('myButton').setAttribute("style", "background:deeppink; border: 1px solid purple;");   
 };
