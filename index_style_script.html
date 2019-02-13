@@ -13,7 +13,19 @@
   </head>
   <body>
     <script> hello(); </script>
+    <script>
+      function addMe(x=5, y=5) {
+        return x+y;
+      }
+      function runAddMe() {
+        document.getElementById("answer").innerHTML = addMe();
+      }
+    </script>
     This is where all my web page content goes!
     <button id="myButton" onClick=changeStyle()>Click Me!</button>
+    <a href="about.html" onclick="alert('Good to go to about HTML page?');">About HTML</a>
+    <button onClick=alert(addMe(3,4))>Click Me!</button>
+    <button onClick=runAddMe()>Adding</button>
+    <h2 id="answer"></h2>
   </body>
 </html>
